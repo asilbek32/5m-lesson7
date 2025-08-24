@@ -1,0 +1,196 @@
+.case-studies {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.breadcrumb {
+  text-align: left;
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #b8b8b8;
+  margin: 0;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.header p {
+  font-size: 16px;
+  color: #ccc;
+  margin: 20px 0;
+  max-width: 600px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #333;
+  transition: background-color 0.3s ease;
+}
+
+.filter:hover {
+  background-color: #333;
+}
+
+.filter-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 16px;
+  color: #00bfff;
+}
+
+.arrow {
+  font-size: 14px;
+  color: #00bfff;
+}
+
+.portfolio_grid {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 600px;
+  width: 100%;
+  background: transparent;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card-img img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+
+.card-body {
+  padding: 18px 20px 25px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.tags span {
+  background: #0d1625;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #00c3ff;
+  font-weight: 500;
+}
+
+.card-body h3 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .portfolio_grid {
+    gap: 30px;
+  }
+  .card {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio_grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .card {
+    max-width: 90%;
+  }
+  .card-body h3 {
+    font-size: 15px;
+  }
+  .filters {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 100%;
+  }
+  .tags span {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+  .card-body h3 {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+.see-more {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.see-more button {
+  background: #00c3ff;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.see-more button:hover {
+  background: #009ecc;
+}
